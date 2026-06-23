@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Batata do Sonho</title><link rel="stylesheet" href="Style.css"></head><body>
+<header><h1>🥔 Batata do Sonho</h1><p>A sua batata recheada única ❤️</p><button onclick="irCarrinho()">🛒 Carrinho</button></header>
+<section class="hero"><h2>Feita com amor para você!</h2><p>Batatas recheadas, cremosas e deliciosas.</p></section>
+<main><div id="cardapio"><h2>Cardápio</h2>
+<div class="produto"><h3>Calabresa Acebolada</h3><p>Calabresa, queijo, creme, cebola, orégano</p><b>R$ 24,90</b><button onclick="add('Calabresa Acebolada',24.90)">Adicionar</button></div>
+<div class="produto"><h3>Presunto e Queijo</h3><p>Presunto, queijo, creme a escolha, orégano</p><b>R$ 22,90</b><button onclick="add('Presunto e Queijo',22.90)">Adicionar</button></div>
+<div class="produto"><h3>Frango Cremoso</h3><p>Frango, creme, queijo, orégano</p><b>R$ 26,90</b><button onclick="add('Frango Cremoso',26.90)">Adicionar</button></div>
+<div class="produto"><h3>Carne à Bolonhesa</h3><p>Molho à bolonhesa, queijo, creme a escolha, orégano</p><b>R$ 32,90</b><button onclick="add('Carne a Bolonhesa',32.90)">Adicionar</button></div>
+<h2>Adicionais</h2><p>Bacon R$5,00 | Calabresa R$4,00 | Tomate R$3,00</p><h2>Bebidas</h2><p>Refrigerante lata R$7,00 | Água sem gás R$3,90 | Água com gás R$4,90</p><h2>Sobremesa</h2><p>Bombom R$2,50</p></div>
+<aside><h2>Seu Carrinho</h2><div id="lista"></div><select id="bairro" onchange="calcular()"><option value="0">Escolha o bairro</option><option value="10">Meia Praia - R$10</option><option value="8">Morretes - R$8</option><option value="14">Centro - R$14</option><option value="12">Ilhota - R$12</option></select><h3>Total: R$ <span id="total">0</span></h3><p>Pix: <b>01372051040</b></p><button onclick="whatsApp()">Finalizar no WhatsApp</button></aside></main>
+<script src="Script.js"></script></body></html>
